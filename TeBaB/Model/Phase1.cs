@@ -10,9 +10,9 @@ namespace TeBaB.Model
         public int Id { get; set; }
         public string Name { get; set; }        // Bane 2 Ute
         public string Type { get; set; }        // Hardcourt
-        public Club Club { get; set; }
+        public Club Club { get; set; }          //PTK
         public int CourtGroup { get; set; }     // Ute, Inne
-        public string Location { get; set; }
+        public string Location { get; set; }    // Bjørntvedt / Tennishallen
         public string VisibleFor { get; set; }  // Klubb, Årskort, Member, Non-Member
         public bool Active { get; set; }
         public DateTime Created { get; set; }
@@ -20,12 +20,6 @@ namespace TeBaB.Model
 
     /* 
      * GROUP: Only collection of users
-     * 
-     * KURS: Navn, antall, pris, Beskrivelse, Gruppering,
-     *      Start, slutt, rabatt/per uke, Maks deltakere, 
-     *      utmelding: (ikke tillatt, senest 1-14 dager før), 
-     *      ansvarlig, synlig for, aktiv
-     * Søk på: Navn, Kursgruppe, Ansvarlig
      */
 
     public class Booking
@@ -48,7 +42,7 @@ namespace TeBaB.Model
         public string Password { get; set; }
         public Membership Membership { get; set; }  // Senior+Årskort
         public UserType UserType { get; set; }      // Coach
-        public UserGroup Group { get; set; }        // Senior/1800-1930
+        public UserGroup Group { get; set; }        // Id? Senior/1800-1930
         public DateTime Birthdate { get; set; }
         public Sex Sex { get; set; }
         public string Email { get; set; }
