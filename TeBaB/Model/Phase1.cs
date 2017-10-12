@@ -22,6 +22,8 @@ namespace TeBaB.Model
      * GROUP: Only collection of users
      */
 
+    // DEVELOPMENT CHANGES  - MERGE into HOKUS
+
     public class Booking
     {
         public int Id { get; set; }
